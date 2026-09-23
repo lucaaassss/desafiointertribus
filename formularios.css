@@ -1,7 +1,8 @@
 body {
-    background-color: #0a5b90;
+    background-color: #A48AE0;
     font-family: "Lexend", sans-serif;
     overflow: hidden;
+    align-items: center;
 }
 
 
@@ -11,23 +12,11 @@ body {
     width: 350px;
     padding: 20px;
     display: block;
-    background: #f5ece0;
+    background: #C6B4EE;
     justify-content: center;
     border-radius: 30px;
-}
-
-header {
-    display: flex;
-    background-color: #f5ece0;
     align-items: center;
 
-    border-bottom: 3px solid rgba(20, 91, 144);
-}
-
-nav a {
-    align-content: center;
-    color: rgb(0, 0, 0);
-    margin: 10px;
 }
 
 
@@ -39,19 +28,19 @@ nav a {
     font-size: 12px;
     letter-spacing: 1px;
     text-decoration: none;
-    color: #0a5b90;
+    color: #4E2FB0;
     background: transparent;
     cursor: pointer;
     transition: ease-out 0.5s;
-    border: 2px solid #0a5b90;
+    border: 2px solid #4E2FB0;
     border-radius: 10px;
-    box-shadow: inset 0 0 0 0 #0a5b90;
+    box-shadow: inset 0 0 0 0 #4E2FB0;
 
 }
 
 .button:hover {
     color: white;
-    box-shadow: inset 0 -100px 0 0 #0a5b90;
+    box-shadow: inset 0 -100px 0 0 #4E2FB0;
 }
 
 .button:active {
@@ -67,7 +56,7 @@ nav a {
     border: 2px solid transparent;
     border-radius: 10px;
     outline: none;
-    background-color: #f8fafc;
+    background-color: #E7DFF7;
     color: #0d0c22;
     transition: 0.5s ease;
 }
@@ -75,7 +64,7 @@ nav a {
 .input:focus,
 .input:hover {
     outline: none;
-    border-color: #0a5b90;
-    background-color: #fff;
+    border-color: #4E2FB0;
+    background-color: #E7DFF7;
     box-shadow: 0 0 0 5px rgb(129 140 248 / 30%);
 }
