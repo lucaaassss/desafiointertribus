@@ -30,15 +30,8 @@
           required
         />
         <br /><br />
-        <a href="">Olvidaste tu contraseña?</a>
-        <br /><br />
         <input type="submit" value="Iniciar sesion" class="button" />
-        <br /><br />
-        <p>No tenes cuenta?</p>
-
-        <a href="Registro.php">
-          <button class="button" href="Registro.php">Registrarse</button>
-        </a>
+        
       </form>
     </div>
   </body>
