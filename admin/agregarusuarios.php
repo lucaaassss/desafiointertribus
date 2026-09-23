@@ -1,4 +1,5 @@
 <?php
+session_start();
 echo"<!DOCTYPE html>
 <html lang='en'>
 
@@ -14,7 +15,7 @@ echo"<!DOCTYPE html>
         <a href=''><img src='logo' alt=''></a>
         <a href='usuario.html'>Usuario</a>
         <a href=' '>Filtrar</a>
-        <a href=' '>Buscar</a>
+        <a href='buscar.php'>Buscar</a>
     </head>
 
     <div class='info'>
