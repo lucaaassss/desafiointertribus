@@ -1,4 +1,5 @@
 <?php 
+session_start();
 /* AGREGAR CONECTAR CON BASE DE DATOS*/
 $datos = [];
 $alumno = $datos['alumno'];
