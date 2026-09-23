@@ -10,7 +10,6 @@
     
     <?php 
         include 'conexion.php';
-        session_start();
         $datos = [];
         // $alumno = $datos['alumno'];
 
@@ -35,6 +34,12 @@
                 </div>
                 <?php
                 }
+            if($_SESSION['user']==true && $_SESSION['rol'] == 'alumno'){?>
+
+                <h1>Sistema de votacion de caciques intertribus ITLF</h1>
+                
+                <?php
+            }
                 
                 // if($alumno == null)
                 //     {
