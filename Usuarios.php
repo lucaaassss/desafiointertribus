@@ -9,7 +9,8 @@
 <body>
     <a href="index.php"><Button>Volver a inicio</Button></a>
     <h1>Usuarios</h1>
-    <button>Agregar usuario</button>
+    <a href="agregarusuarios.php"><button>Agregar usuario</button></a>
+    
     <div class="listausuarios">
         <?php
             $stmt = $conexion->prepare("SELECT contraseña,rol FROM usuarios");
