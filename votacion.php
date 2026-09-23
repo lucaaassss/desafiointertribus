@@ -14,6 +14,8 @@ echo"<!DOCTYPE html>
 <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    
+    <link rel='stylesheet' href='cssprincipal.css' />
     <title>Inter</title>
 </head>
 <body>
@@ -22,6 +24,7 @@ echo"<!DOCTYPE html>
         <a href=''>inicio</a>
         <a href='datos.html'>Inter</a>
     </header>";
+    
     $votacion=false;/*arreglar despues*/
 if($votacion == false)
 {
