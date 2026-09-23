@@ -9,15 +9,6 @@
     <title>Inicio Sesion</title>
   </head>
 
-  <header>
-    <a href="inicio.php" class="logo">
-      <img src="imagenes/logo con letra.png" alt="" width="120" class="logo" />
-    </a>
-    
-    
-    </nav>
-  </header>
-
   <body class="hero">
     <div class="form">
       <form action="verificacionlogin.php" method="POST">
