@@ -3,44 +3,35 @@
 $datos = [];
 $alumno = $datos['alumno'];
 
+echo"<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Inter</title>
+</head>";
+
+if($alumno == null)
+    {
+        $alumno = null;
+        echo"no hay usuario registrado";
+        $_SESSION['usuario']=null;
+        $_SESSION['año']=null;
+    }
 if($_SESSION['usuario'] == null)
 {
-    echo"<!DOCTYPE html>
-    <html lang='en'>
-
-    <head>
-        <meta charset='UTF-8'>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-        <title>Inter</title>
-    </head>
-
-    <body>
+    echo"
 
         <head>
             <a href=''><img src='logo' alt=''></a>
-            <a href='registrarse.html'>registrarse</a>
+            <a href='login.php'>registrarse</a>
             <a href='datos.html'>Inter</a>
-    </head>
-
-    <div class='info'>
-        <h1>Inter</h1>
-        <p>informacion-......................................</p>
-        <a href='registrarse.html'>registrarse</a>
-    </div>
-
-    </body>
-
-    </html>";
+    </head>";
 }
-if($_SESSION['usuario'] == 'admin')
+else if($_SESSION['usuario'] == 'admin')
 {
-    echo"<!DOCTYPE html>
-    <html lang='en'>
-    <head>
-        <meta charset='UTF-8'>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-        <title>Inter</title>
-    </head>
+    echo"
     <body>
         <head>
             <a href=''><img src='logo' alt=''></a>
@@ -64,9 +55,7 @@ if($_SESSION['usuario'] == 'admin')
 }
 else if ($_SESSION['año'] == '6to')
     {
-    echo"<!DOCTYPE html>
-<html lang='en'>
-
+    echo"
 <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
@@ -83,28 +72,14 @@ else if ($_SESSION['año'] == '6to')
         <a href='postularse.html'>Postularse</a>
     </head>
 
-    <div class='info'>
-        <h1>Inter</h1>
-        <p>informacion-......................................</p>
-        <a href='registrarse.html'>registrarse</a>
-    </div>
-
 </body>
-
-</html>";
+";
 }
 else
 {
-        echo"<!DOCTYPE html>
-<html lang='en'>
 
-<head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Inter</title>
-</head>
 
-<body>
+echo "<body>
 
     <head>
         <a href=''><img src='logo' alt=''></a>
@@ -113,13 +88,11 @@ else
         <a href='votacion.html'>Votar</a>
     </head>
 
-    <div class='info'>
-        <h1>Inter</h1>
-        <p>informacion-......................................</p>
-        <a href='registrarse.html'>registrarse</a>
-    </div>
-
 </body>
 
 </html>";
 }
+   echo "<div class='info'>
+        <h1>Inter</h1>
+        <p>informacion-......................................</p>
+    </div>";

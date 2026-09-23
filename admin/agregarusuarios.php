@@ -13,7 +13,8 @@ echo"<!DOCTYPE html>
     <head>
         <a href=''><img src='logo' alt=''></a>
         <a href='usuario.html'>Usuario</a>
-        <a href='datos.html'>Inter</a>
+        <a href=' '>Filtrar</a>
+        <a href=' '>Buscar</a>
     </head>
 
     <div class='info'>
@@ -21,6 +22,7 @@ echo"<!DOCTYPE html>
         <div class='boton'>
         <a href=' '>agregar usuario</a>
         <a href=' '>Eliminar usuario</a>
+        <a href=' '>Lista de usuarios</a>
         </div>
     </div>
 
