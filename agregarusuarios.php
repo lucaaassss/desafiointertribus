@@ -14,20 +14,17 @@ echo"<!DOCTYPE html>
     <head>
         <a href=''><img src='logo' alt=''></a>
         <a href='usuario.html'>Usuario</a>
-        <a href=' '>Filtrar</a>
-        <a href='buscar.php'>Buscar</a>
+        <a href=''>Filtrar</a>
+        <a href='buscar.php'>Buscar usuario</a>
     </head>
 
     <div class='info'>
     <div class='titulo'><h1>USUARIOS</h1></div>
         <div class='boton'>
-        <a href=' '>agregar usuario</a>
-        <a href=' '>Eliminar usuario</a>
-        <a href=' '>Lista de usuarios</a>
+        <a href='Usuarios.php'>Lista de usuarios</a>
         </div>
     </div>
 
 </body>
 
-</html>";
-?>
+</html>";/*falta mucho*/?>
