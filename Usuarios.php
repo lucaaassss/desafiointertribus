@@ -11,6 +11,12 @@
     <h1>Usuarios</h1>
     <button>Agregar usuario</button>
     <div class="listausuarios">
+        <?php
+            $stmt = $conexion->prepare("SELECT contraseña,rol FROM usuarios");
+            $stmt->bind_param("s", $email);
+            $stmt->execute();
+            $stmt->bind_result($password, $rol);  
+        ?>
 
     </div>
 </body>
