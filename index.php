@@ -52,8 +52,7 @@ if($_SESSION['usuario'] == 'admin')
         <div class='info'>
             <h1>Inter</h1>
             <div>
-            <a href=''>Eliminar usuario</a>
-            <a href=''>agregar usuario</a>
+            <a href='admin/agregarusuario.php'>usuarios</a>
             <a href=''>editar</a>
             </div>
             <div>
