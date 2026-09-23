@@ -1,33 +1,81 @@
-<?php
-session_start();
-echo"<!DOCTYPE html>
-<html lang='en'>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Inter</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formularios.css" />
+    <title>Document</title>
 </head>
-
 <body>
+    <?php
+        session_start();
+        include 'conexion.php';
 
-    <head>
-        <a href=''><img src='logo' alt=''></a>
-        <a href='usuario.html'>Usuario</a>
-        <a href=' '>Filtrar</a>
-        <a href='buscar.php'>Buscar</a>
-    </head>
+    ?>
 
-    <div class='info'>
-    <div class='titulo'><h1>USUARIOS</h1></div>
-        <div class='boton'>
-        <a href=' '>agregar usuario</a>
-        <a href=' '>Eliminar usuario</a>
-        <a href=' '>Lista de usuarios</a>
-        </div>
+    <div class="form">
+      <form action="agregarusuario.php" method="POST">
+        <p>Nombre</p>
+        <input
+          type="text"
+          class="input"
+          placeholder="Nombre"
+          name="nombre"
+          required
+        />
+        <p>Apellido</p>
+        <input
+          type="text"
+          class="input"
+          placeholder="Apellido"
+          name="apellido"
+          required
+        />
+        <p>curso</p>
+        <input
+          type="text"
+          class="input"
+          placeholder="Curso"
+          name="curso"
+          required
+        />
+        <p>Rol</p>
+        <input
+          type="text"
+          class="input"
+          placeholder="Rol"
+          name="rol"
+          required
+        />
+        <p>Tribu</p>
+        <input
+          type="text"
+          class="input"
+          placeholder="Tribu"
+          name="tribu"
+          required
+        />
+        <p>Email</p>
+        <input
+          type="email"
+          class="input"
+          placeholder="Email"
+          name="email"
+          required
+        />
+        <p>Contraseña</p>
+        <input
+          type="text"
+          class="input"
+          placeholder="Contraseña"
+          name="contraseña"
+          required
+        />
+        <br /><br />
+        <input type="submit" value="Aceptar" class="button" />
+        
+      </form>
     </div>
 
 </body>
-
-</html>";
-?>
+</html>
