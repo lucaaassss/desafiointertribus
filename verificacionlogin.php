@@ -14,6 +14,7 @@ if ($stmt->fetch()) {
     if ($contraseña==$password) {
     $_SESSION["user"] = true;
     $_SESSION["rol"] = $rol;
+    $_SESSION["email"] = $email;
     header("Location: index.php");
         exit; 
     } else {

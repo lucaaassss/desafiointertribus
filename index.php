@@ -28,17 +28,26 @@
                     <a href="">
                         <BUtton>Votaciones</BUtton>
                     </a>
-                    <a href="">
+                    <a href="login.php">
                         <BUtton>Cerrar sesion</BUtton>
                     </a>
                 </div>
                 <?php
                 }
-            if($_SESSION['user']==true && $_SESSION['rol'] == 'alumno'){?>
+            if($_SESSION['user']==true && $_SESSION['rol'] == 'alumno'){
+                $stmt = $conexion->prepare("SELECT id_tribu FROM usuarios WHERE email = ?");
+                $stmt->bind_param("s", $_SESSION["email"]);
+                $stmt->execute();
+                $stmt->bind_result($tribu);
 
+                ?>
                 <h1>Sistema de votacion de caciques intertribus ITLF</h1>
-                
                 <?php
+                if($tribu==1){?>
+                    <p>Violeta</p>
+                    <?php
+                }
+                
             }
                 
                 // if($alumno == null)
