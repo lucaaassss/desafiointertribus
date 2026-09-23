@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="formularios.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/68e2fe5586.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Inicio Sesion</title>
+  </head>
+
+  <header>
+    <a href="inicio.php" class="logo">
+      <img src="imagenes/logo con letra.png" alt="" width="120" class="logo" />
+    </a>
+    
+    
+    </nav>
+  </header>
+
+  <body class="hero">
+    <div class="form">
+      <form action="verificacionlogin.php" method="POST">
+       
+        <p>Email</p>
+        <input
+          type="email"
+          class="input"
+          placeholder="Email"
+          name="email"
+          required
+        />
+        <p>Contraseña</p>
+        <input
+          type="text"
+          class="input"
+          placeholder="Contraseña"
+          name="contraseña"
+          required
+        />
+        <br /><br />
+        <a href="">Olvidaste tu contraseña?</a>
+        <br /><br />
+        <input type="submit" value="Iniciar sesion" class="button" />
+        <br /><br />
+        <p>No tenes cuenta?</p>
+
+        <a href="Registro.php">
+          <button class="button" href="Registro.php">Registrarse</button>
+        </a>
+      </form>
+    </div>
+  </body>
+</html>
