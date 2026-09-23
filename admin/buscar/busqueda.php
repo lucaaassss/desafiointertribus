@@ -1,12 +1,8 @@
 <?php
 session_start();
 $id=$_POST['id'];
-$conexion = new mysqli($servidor, $usuario, $password, $base_datos);
-if ($conexion->connect_error) {
-    die("Conexión a la base de datos fallida: " . $conexion->connect_error);
-}
+include '../conexion.php';
 $ids = $conexion[$usuario($id)];
-
 
 if($id == null)
     {
