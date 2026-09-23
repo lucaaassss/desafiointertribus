@@ -94,5 +94,5 @@ echo "<body>
 }
    echo "<div class='info'>
         <h1>Inter</h1>
-        <p>informacion-......................................</p>
+        <p>informacion-</p>
     </div>";
