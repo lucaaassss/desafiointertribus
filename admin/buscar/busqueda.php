@@ -1,16 +1,22 @@
 <?php
 session_start();
-include 'conexion.php';
-$id=$_POST['id'];
+$servidor = "localhost";   
+$usuario = "root";         
+$password = "";            
+$base_datos = "desafio intertribus"; 
 $conexion = new mysqli($servidor, $usuario, $password, $base_datos);
-$ids = $conexion[$usuario($id)];
+$id=$_POST['id'];
+$stmt = $conexion->prepare("SELECT id_usuario FROM usuarios WHERE email = ?");
+$stmt->bind_param("s", $_SESSION["email"]);
+$stmt->execute();
+$stmt->bind_result($ids);
 if ($conexion->connect_error) {
     die("Conexión a la base de datos fallida: " . $conexion->connect_error);
     
 }
-if($id == null)
+if($ids == null)
     {
-        $id== 0;
+        $ids= 0;
     }
 
 foreach($ids as $a)

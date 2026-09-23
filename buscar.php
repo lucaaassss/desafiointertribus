@@ -10,7 +10,7 @@ session_start();
     <title>Busqueda</title>
 </head>
 <body>
-    <form action="buscar/busqueda.php" method="POST">
+    <form action="admin/buscar/busqueda.php" method="POST">
        
         <h1>Ingresa el ID del usuario</h1>
         <input
