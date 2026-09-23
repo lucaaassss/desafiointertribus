@@ -5,7 +5,7 @@ $conexion = new mysqli($servidor, $usuario, $password, $base_datos);
 $ids = $conexion[$usuario($id)];
 if ($conexion->connect_error) {
     die("Conexión a la base de datos fallida: " . $conexion->connect_error);
-    
+    header("location:../buscar.php");
 }
 if($id == null)
     {
@@ -25,7 +25,7 @@ foreach($ids as $a)
     }
     if($id == $a)
         {
-            /*agregar la url del usuario no me acuerdo como mandar a pestañas lol*/ 
+            header("location:../../index.php");/*agregar la url del usuario no me acuerdo como mandar a pestañas lol*/ 
         }
         else
             {
@@ -35,6 +35,7 @@ foreach($ids as $a)
                 <meta charset='UTF-8'>
                 <meta name='viewport' content='width=device-width, initial-scale=1.0'>
                 
+            <link rel='stylesheet' href='cssprincipal.css' />
                 <title>Busqueda fallida</title>
             </head>
             <body>
