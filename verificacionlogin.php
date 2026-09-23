@@ -5,25 +5,22 @@ session_start();
 $email = $_POST['email'];
 $contraseña = $_POST['contraseña'];
 
-$stmt = $conexion->prepare("SELECT contraseña FROM usuarios WHERE email = ?");
+$stmt = $conexion->prepare("SELECT contraseña,rol FROM usuarios WHERE email = ?");
 $stmt->bind_param("s", $email);
 $stmt->execute();
-$stmt->bind_result($password_hash_db);
-
+$stmt->bind_result($password, $rol);
 
 if ($stmt->fetch()) {
-    if (password_verify($contraseña, $password_hash_db)) {
-        header("Location: index.php");
-        $_SESSION["email"] = $email;
+    if ($contraseña==$password) {
+    $_SESSION["user"] = true;
+    $_SESSION["rol"] = $rol;
+    header("Location: index.php");
         exit; 
     } else {
-        echo "<script type='text/javascript'>alert('Contraseña incorrecta');
+        echo "<script type='text/javascript'>alert('Email y o contraseña incorrectos');
         window.location.href = 'login.php';</script>";
     }
-} else {
-    echo "<script type='text/javascript'>alert('Email incorrecto');
-        window.location.href = 'login.php';</script>";
-}
+} 
 
 $stmt->close();
 $conexion->close();
