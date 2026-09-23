@@ -6,14 +6,6 @@
     <link rel="stylesheet" href="formularios.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/68e2fe5586.js"
-      crossorigin="anonymous"
-    ></script>
     <title>Inicio Sesion</title>
   </head>
 
