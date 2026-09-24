@@ -23,7 +23,7 @@
         />
         <p>Contraseña</p>
         <input
-          type="text"
+          type="password"
           class="input"
           placeholder="Contraseña"
           name="contraseña"
