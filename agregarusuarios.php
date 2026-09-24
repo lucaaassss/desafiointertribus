@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="formularios.css" />
+    
     <title>Document</title>
 </head>
 <body>
@@ -11,7 +12,7 @@
         include 'conexion.php';
     ?>
 
-    <a href="usuarios.php"><button>Volver</button></a>
+    <a href="usuarios.php"><button class="button">Volver</button></a>
 
     <div class="form">
       <form action="agregarusuario.php" method="POST">
