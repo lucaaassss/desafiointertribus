@@ -33,6 +33,44 @@
     <link rel="stylesheet" href="cssprincipal.css" />
 </head>
 <body>
+<<<<<<< HEAD
+    <?php
+session_start();
+echo"<!DOCTYPE html>
+<html lang='en'>
+<body>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    
+    <link rel='stylesheet' href='cssprincipal.css' />
+    <title>Inter</title>
+</head>
+<body>
+    <header>
+         <a href=''><img src='logo' alt=''></a>
+        <a href=''>inicio</a>
+        <a href='datos.html'>Inter</a>
+    </header>";
+if($_SESSION('votacion') == false)
+{
+    echo"<body>
+            <div class= votacion;>
+                <a href='votacion.php'>Iniciar votacion</a>
+            </div>
+        </body>";
+        $votacion=true;
+}
+else
+    {
+        echo"<body>
+            <div class= votacion;>
+                <a href='votacion.php'>Cerrar votacion</a>
+            </div>
+        </body>";
+        $votacion=false;
+}
+=======
     <h1>Crear nueva votación</h1>
     <form action="guardar_votacion.php" method="POST">
         <p>Nombre de la votación</p>
@@ -56,6 +94,7 @@
     <?php } else { ?>
         <p>Todavía no hay ninguna votación creada.</p>
     <?php } ?>
+>>>>>>> 96b9a0e4ac34b8c8e3ecad6ce2479bf279ae07c5
 
 </body>
 </html>
