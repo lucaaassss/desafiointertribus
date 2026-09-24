@@ -36,7 +36,7 @@
     <h1>Crear nueva votación</h1>
     <form action="guardar_votacion.php" method="POST">
         <p>Nombre de la votación</p>
-        <input type="text" name="nombre" class="input" placeholder="Ej: Elección de Caciques 2026" required />
+        <input type="text" name="nombre" class="input" placeholder="Nombre de la votacion" required />
         <br><br>
         <input type="submit" value="Crear votación" class="button" />
     </form>
