@@ -12,10 +12,39 @@
         <a href=''>inicio</a>
         <a href='datos.html'>Inter</a>
     </header>
+    
     <?php
         session_start();
-        include 'conexion.php';
-     $_POST('id_tribu');
+
+        $servidor = "localhost";   
+    $usuario = "root";         
+    $password = "";            
+    $base_datos = "desafiointers"; 
+    $conexion = new mysqli($servidor, $usuario, $password, $base_datos);
+
+    $tribu = $_POST('id_tribu');
+
+    $stmt = $conexion->prepare("SELECT id_tribu FROM candidatos WHERE tribu = ?");
+    $stmt->bind_param("s", $_SESSION["tribu"]);/*no se */
+    $stmt->execute();
+    $stmt->bind_result($candidatos_tribu);
+    
+
+     if($tribu == 1)
+        {
+            foreach($candidatos_tribu as $a1)
+                {
+                   if ($a1 == 1)
+                    {
+                        echo"<img src='' alt='' >";/*PONER FOTO*/ 
+                        echo"Nombre:" . $candidato['nombre'] ." ". $candidato['apellido'] "<br>";
+                        echo"Violeta-2027";
+                         <a href="">
+                          <BUtton>Votaciones</BUtton>
+                         </a>;
+                    }
+                }
+        }
 
     ?>
 </body>
