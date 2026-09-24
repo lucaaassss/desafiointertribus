@@ -3,7 +3,7 @@ body {
     font-family: "Lexend", sans-serif;
     overflow: hidden;
     align-items: center;
-    
+    overflow: auto;
 }
 
 
