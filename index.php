@@ -10,7 +10,7 @@
     
     <?php 
         include 'conexion.php';
-        $datos = [];
+        
         // $alumno = $datos['alumno'];
 
         if($_SESSION['user']!=true){
@@ -151,6 +151,10 @@
         //         <h1>Inter</h1>
         //         <p>informacion-......................................</p>
         //     </div>";
+                
+                
+            }
+                
 ?>
 </body>
 </html>
