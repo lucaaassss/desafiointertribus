@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="cssprincipal.css" />
 </head>
 <body>
+    <a href="index.php"><button>Volver a inicio</button></a>
     <h1>Crear nueva votación</h1>
     <form action="guardar_votacion.php" method="POST">
         <p>Nombre de la votación</p>

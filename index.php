@@ -65,6 +65,9 @@
             $stmt->execute();
             $resultado = $stmt->get_result();
     ?>
+            <a href="login.php">
+                <button>Cerrar sesion</button>
+            </a>
         <h1>Elegí tu cacique</h1>
         <form action="registrarvoto.php" method="POST">
             <input type="hidden" name="id_votacion" value="<?php echo $id_votacion; ?>" />
