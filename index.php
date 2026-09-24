@@ -25,7 +25,7 @@
                     <a href="usuarios.php">
                         <BUtton>Usuarios</BUtton>
                     </a>
-                    <a href="">
+                    <a href="votacion.php">
                         <BUtton>Votaciones</BUtton>
                     </a>
                     <a href="login.php">
