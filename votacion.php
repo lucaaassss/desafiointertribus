@@ -1,7 +1,6 @@
 <?php
     include 'conexion.php';
 
-    // Traemos la votación más reciente para mostrar sus resultados
     $votacion = $conexion->query("SELECT id_votacion, nombre FROM votaciones ORDER BY id_votacion DESC LIMIT 1")->fetch_assoc();
 
     $resultado = null;

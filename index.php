@@ -39,7 +39,11 @@
 
             $votacion = $conexion->query("SELECT id_votacion FROM votaciones WHERE estado = 'abierta' LIMIT 1")->fetch_assoc();
 
-            if (!$votacion) {
+            if (!$votacion) {?>
+                <a href="login.php">
+                <button>Cerrar sesion</button>
+                </a>
+                <?php
                 die("No hay ninguna votación abierta en este momento.");
             }
 
@@ -50,7 +54,11 @@
             $stmt->execute();
             $stmt->store_result();
 
-            if ($stmt->num_rows > 0) {
+            if ($stmt->num_rows > 0) {?>
+                <a href="login.php">
+                <button>Cerrar sesion</button>
+                </a>
+                <?php
                 die("Ya emitiste tu voto en esta votación.");
             }
             $stmt->close();

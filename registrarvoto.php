@@ -12,6 +12,9 @@
 
     if ($stmt->num_rows > 0) {
         die("Ya emitiste tu voto en esta votación.");
+           echo"<a href='login.php'>
+                <button>salir</button>
+            </a>";
     }
     $stmt->close();
 
@@ -26,4 +29,7 @@
     $stmt->close();
 
     echo "¡Gracias por votar!";
+    echo"            <a href='login.php'>
+                <button>salir</button>
+            </a>";
 ?>
