@@ -24,9 +24,7 @@ echo"<!DOCTYPE html>
         <a href=''>inicio</a>
         <a href='datos.html'>Inter</a>
     </header>";
-    
-    $votacion=false;/*arreglar despues*/
-if($votacion == false)
+if($_SESSION('votacion') == false)
 {
     echo"<body>
             <div class= votacion;>

@@ -13,7 +13,6 @@
         $datos = [];
         // $alumno = $datos['alumno'];
 
-
         if($_SESSION['user']!=true){
             
             echo "<script type='text/javascript'>window.location.href = 'login.php';</script>";
@@ -34,7 +33,8 @@
                 </div>
                 <?php
                 }
-            if($_SESSION['user']==true && $_SESSION['rol'] == 'alumno'){
+            if($_SESSION['user']==true && $_SESSION['rol'] == 'alumno')
+                {
                 $stmt = $conexion->prepare("SELECT id_tribu FROM usuarios WHERE email = ?");
                 $stmt->bind_param("s", $_SESSION["email"]);
                 $stmt->execute();
@@ -47,25 +47,42 @@
                     <p>Violeta</p>
                     <?php
                 }
+                   if($_SESSION('votacion'))
+                    {
+                    echo "<head>
+                    <div>
+                        <a href='' class ='logo'><img src='logo.jpg' alt=''></a>
+                        <a href='votar.php'>votar</a>
+                        <a href=''>usuario</a>
+                    </div>
+                    </head>";
+                    }
+                    else{
+                        echo"<head>
+                    <div>
+                        <a href='' class ='logo'><img src='logo.jpg' alt=''></a>
+                        <a href=' '>usuario</a>
+                    </div>
+                    </head>";
+                    }
+                     
                 
             }
-                
-                // if($alumno == null)
-                //     {
-                    //         $alumno = null;
-                    //         echo"no hay usuario registrado";
-                    //         $_SESSION['usuario']=null;
-                    //         $_SESSION['año']=null;
-                    //     }
-                    // if($_SESSION['usuario'] == null)
-                    // {
-                        //     echo"
-                        
-                        //         <head>
-                        //             <a href=''><img src='logo' alt=''></a>
-                        //             <a href='login.php'>registrarse</a>
-                        //             <a href='datos.html'>Inter</a>
-                        //     </head>";
+            else{
+                     $alumno = null;
+                     echo"no hay usuario registrado";
+                     $_SESSION['usuario']=null;
+                    $_SESSION['año']=null;
+                    
+                    echo "<head>
+                    <div>
+                        <a href='' class ='logo'><img src='logo.jpg' alt=''></a>
+                        <a href='login.php'>registrarse</a>
+                        <a href='datos.html'>Inter</a>
+                    </div>
+                    </head>";
+            }
+
                         // }
                         // else if($_SESSION['usuario'] == 'admin')
                         // {
