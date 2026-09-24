@@ -3,6 +3,6 @@ session_start();
 $servidor = "localhost";   
 $usuario = "root";         
 $password = "";            
-$base_datos = "desafio intertribus"; 
+$base_datos = "desafiointers"; 
 $conexion = new mysqli($servidor, $usuario, $password, $base_datos);
 ?>
